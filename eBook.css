@@ -1,14 +1,16 @@
+body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
 .header{
     border: 1px solid white;
     background: linear-gradient(to right,#85d960,#2a8006);
-    height: 20px;
-    width: 100vw;
-    margin: 0;
+    height: 25px;
+    width: 100%;
     display: flex; /* Use flexbox to align items */
     align-items: center; /* Center content vertically */
     justify-content: center; /* Center items horizontally */
-    padding: 0 40px;
-    box-sizing: border-box;
 }
 
 .header p{
@@ -36,26 +38,46 @@
 
 .nav-bar{
     display: flex;
+    flex-direction: column;
     align-items: center;
-    padding: 0px 20px;
-    /* border: 1px solid black; */
     justify-content: space-between;
-    height: 50px;
-    width: 100vw;
     box-sizing: border-box;
-    position: sticky;
+    border-color : white;
+    position: fixed;
+    width: 100%;
+    top:0;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+.nav{
+    display : flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
 }
 
 .logo {
     height: 40px; /* Adjust height to fit within the navbar */
     width: 40px;
-    margin-left: -800px;
     object-fit: cover; /* Ensure the logo fits properly */
+}
+
+.logo-heading{
+    display: flex;
+    flex-direction: row;
+    margin-left: 30px;
+    align-items: center;
+    justify-content: center;
+}
+.nav-Btn{
+display: flex;
+flex-direction: row;
+margin-right: 30px;
 }
 
 .nav-bar h4 {
     font-weight: bold;
-    margin: 0 90px;
+    margin: 0 10px 0 10px;
     /* padding-right: 20px; */
     font-family: Arial, Helvetica, sans-serif;
 
@@ -64,10 +86,8 @@
 .nav-bar ul{
     display: flex;
     align-items: center;
-    margin: 0;
-    padding: 0;
     list-style: none;
-    font-size: small;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .nav-bar ul li{
@@ -125,8 +145,6 @@
     justify-content: space-between;
     align-items: center; 
     border: 1px solid black;
-    width: 90%;
-    max-width: 1200px; 
     margin: 20px auto; 
     padding: 20px;
     box-sizing: border-box;
@@ -184,8 +202,7 @@
 
 .container2{
     border: 1px solid black;
-    height: 600px;
-    width: 1000px;
+    width: 100%;
 }
 
 .container2 h3{
@@ -336,7 +353,7 @@
 .footer{
     border: 1px solid black;
     height: 500px;
-    width: 1000px;
+    width: 100%;
     background: linear-gradient(to right,#85d960,#2a8006);
 }
 
