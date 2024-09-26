@@ -1,0 +1,645 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    
+}
+.header{
+    border: 1px solid white;
+    background: linear-gradient(to right,#85d960,#2a8006);
+    height: 20px;
+    width: 100vw;
+    margin: 0;
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    padding: 0 40px;
+    box-sizing: border-box;
+}
+
+.header p{
+    margin: 0px;
+    color: white;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: small;
+    text-align: center;
+    flex-grow: 1;
+
+}
+
+.header p span{
+    color: white;
+    font-weight: bold;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: small;
+}
+
+.header a{
+    margin:0px 50px;
+    color: orange;
+    font-size: small;
+}
+
+.nav-bar{
+    display: flex;
+    align-items: center;
+    padding: 0px 20px;
+    /* border: 1px solid black; */
+    justify-content: space-between;
+    height: 50px;
+    width: 100vw;
+    box-sizing: border-box;
+    position: sticky;
+}
+
+.logo {
+    height: 40px; 
+    width: 40px;
+    margin-left: -1300px;
+    object-fit: cover; 
+}
+
+.nav-bar h4 {
+    font-weight: bold;
+    margin: 0 90px;
+    /* padding-right: 20px; */
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.nav-bar ul{
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: medium;
+}
+
+.nav-bar ul li{
+    margin: 0 10px;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.resources{
+    color: blue;
+}
+
+.nav-bar ul button{
+    background-color: #85d960;
+    color: white;
+    border-radius: 5px;
+    font-size: small;
+    font-weight: bold;
+    height: 20px;
+    width: 50px;
+    border: none;
+    cursor: pointer;
+}
+
+
+
+.container {
+    display: flex; 
+    justify-content: space-between;
+    align-items: center; 
+    /* border: 1px solid black; */
+    width: 93%;
+    height: 430px;
+    max-width: 85vw; 
+    margin: 10px auto; 
+    padding: 0px 20px;
+    box-sizing: border-box;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: small;
+}
+
+.box {
+    width: 40%; 
+    padding: 0px 0px 0px 40px; 
+}
+
+.picture {
+    width: 480px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    border-left: 1px solid black; 
+    box-sizing: border-box;
+}
+
+.picture img {
+    width: 480px; 
+    height:300px;
+}
+
+.container ul li{
+    list-style: none;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: medium;
+}
+
+.fa-circle-arrow-right{
+    color: #85d960;
+}
+
+.box h2{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 25px;
+}
+
+.box h2 span{
+    color: #85d960;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 25px;
+}
+
+.box h5{
+    font-size: medium;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.box p{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    word-spacing: 2px;
+}
+
+.box h6{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 15px; 
+}
+
+.form {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    flex-wrap: wrap;
+    padding-top: 40px;
+    padding-left: 200px;
+    /* border: 1px solid black; */
+   
+}
+
+.form label{
+    display: inline-block;
+    margin-right: 15px ;
+    font-size: medium;
+}
+
+.form input{
+    padding: 3px;
+    margin-right: 10px;
+    /* border: 1px solid black; */
+    border-radius: 4px;
+    font-size: small;
+}
+
+.form button{
+    color: white;
+    background-color: #85d960;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 12px;
+    font-size: small;
+    cursor: pointer;
+    padding: 5px 10px;
+}
+
+.form label span{
+    color: red;
+}
+
+/* .chatbot{
+    border: 1px solid black;
+    height: 50px;
+    width: 150px;
+    padding: 0px 40px;
+} */
+
+.chat{
+    height: 30px;
+    width: 30px;
+    position: fixed;
+    top: 480px;
+    margin: 0px 10px 0px 1470px;
+    border-radius: 50px;
+    padding: 0px 0px;
+}
+
+.chatter{  
+    top: 480px;
+    margin: 0px 10px 0px 1390px;
+    position: fixed;
+    color: white;
+    background-color: #85d960;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 12px;
+    font-size: small;
+    cursor: pointer;
+} 
+
+.container1{
+    padding: 100px 200px;
+}
+
+.container1 h5{
+    font-size: medium;
+    color: #85d960;
+}
+
+.container2{
+    /* border: 1px solid black; */
+    height: 1150px;
+    width: 1100px;
+    padding: 0px 200px;
+    
+}
+.bookBox{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+
+.container2 h3{
+    text-align: center;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: large;
+    margin: 12px;
+
+}
+
+.container2 h5{
+    color: red;
+    font-size: small;
+    text-align: center;
+}
+
+.container2 h4{
+    font-weight: bold;
+    font-size: medium;
+    text-align: center;
+}
+
+.container2 p{
+    font-size: small;
+    text-align: center;
+}
+
+#more1, #more2, #more3, #more4, #more5, #more6, #more7, #more8{
+    display: none;
+}
+
+.container3{
+    /* border: 1px solid black; */
+    width: 1200px;
+    height: 540px;
+    padding: 10px 10px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.b1, .b2, .b3, .b4{
+    border: 1px solid#aeaeaea7;
+    width: 280px;
+    height: 480px; 
+    display: inline-block;
+    border-radius: 10px;
+    padding: 7px;
+    overflow: hidden;
+}
+
+
+.box1, .box2, .box3, .box4 {
+    border: 1px solid #aeaeaea7;
+    width: 220px;
+    max-height: 450px;  /* This prevents boxes from expanding too much */
+    
+    display: inline-block;
+    border-radius: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: x-small;
+    padding: 10px 10px;
+    overflow: hidden;  /* Ensures content overflow is hidden */
+    transition: height 0.3s ease-in-out;
+      flex: 1 1 30%;
+      margin: 100 px;
+}
+
+
+
+.box1 img, .box2 img, .box3 img, .box4 img {
+    width: 220px;
+    height: 140px;
+    border-radius: 10px;
+}
+
+.box1 button, .box2 button, .box3 button, .box4 button{
+    background-color: #85d960;
+    border-radius: 10px;
+}
+
+.container4{
+    /* border: 1px solid black; */
+    width: 1200px;
+    height: 550px;
+    margin-top: 5px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.b1, .b2, .b3, .b4{
+    border: 1px solid#aeaeaea7;
+    width: 280px;
+    height: 480px; 
+    display: inline-block;
+    border-radius: 10px;
+    padding: 7px;
+    overflow: hidden;
+}
+
+.box5, .box6, .box7, .box8 {
+    border: 1px solid #aeaeaea7;
+    width: 220px;
+    max-height: 450px;  /* This prevents boxes from expanding too much */
+    margin-left: 20px;
+    display: inline-block;
+    border-radius: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: x-small;
+    padding: 10px 10px;
+    overflow: hidden;  /* Ensures content overflow is hidden */
+    transition: height 0.3s ease-in-out;  /* Smooth transition */
+}
+
+.box5 img, .box6 img, .box7 img, .box8 img {
+    width: 220px;
+    height: 140px;
+    border-radius: 10px;
+}
+
+.box5 button, .box6 button, .box7 button, .box8 button{
+    background-color: #85d960;
+    border-radius: 10px;
+}
+
+
+.footer{
+    /* border: 1px solid black; */
+    height: 500px;
+    width: 100%;
+    background: linear-gradient(to right,#85d960,#2a8006);
+    display: flex;
+    padding-left: 30px;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    margin-top: -135px;
+}
+
+.foot1{
+    width: 250px;
+    height: 250px;
+    /* border: 1px solid black; */
+    display: inline-block;
+    color: white;
+    padding: 0px 20px;
+
+   
+}
+
+.foot1 ul li{
+    list-style: none;
+}
+
+ .foot1 ul li a{
+    text-decoration: none;
+    color: white;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: medium;
+}
+
+.foot2{
+    width: 250px;
+    height: 250px;
+    /* border: 1px solid black; */
+    display: inline-block;
+    list-style: none;
+    text-decoration: none;
+    color: white;
+    padding: 0px;
+    top: auto;
+
+  
+} 
+
+.foot2 ul li{
+    list-style: none;
+}
+
+.foot2 ul li a{
+    list-style: none;
+    text-decoration: none;
+    color: white;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: medium;
+}
+
+.foot3{
+    width: 250px;
+    height: 250px;
+    /* border: 1px solid black; */
+    display: inline-block;
+    list-style: none;
+    text-decoration: none;
+    color: white;
+}
+
+.foot3 ul li{
+    list-style: none;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: medium;
+} 
+
+.login input[type=text], input[type=password] {
+    width: 30%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  
+  /* Set a style for all buttons */
+.login  button {
+    background-color: #04AA6D;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 30%;
+    border-radius: 10px;
+  }
+  
+.login button:hover {
+    opacity: 0.8;
+  }
+  
+  /* Extra styles for the cancel button */
+  .cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+  }
+  
+  /* Center the image and position the close button */
+  .imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+  }
+  
+  img.avatar {
+    width: 20%;
+    border-radius: 30%;
+  }
+  
+  .cont {
+    padding: 16px;
+  }
+  
+  span.psw {
+    float: right;
+    padding-top: 16px;
+  }
+  
+  /* The Modal (background) */
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 60px;
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+  }
+  
+  /* The Close Button (x) */
+  .close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: red;
+    cursor: pointer;
+  }
+  
+  /* Add Zoom Animation */
+  .animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+  }
+  
+  @-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+  }
+    
+  @keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+  }
+  
+  /* Change styles for span and cancel button on extra small screens */
+  @media screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+    .cancelbtn {
+       width: 100%;
+    }
+  }
+
+  .container2 {
+    padding: 20px;
+}
+
+.bookBox {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 equal columns */
+    grid-template-rows: repeat(2, auto); /* 2 rows */
+    gap: 20px; /* Space between items */
+    max-width: 100%; /* Prevent overflowing */
+}
+
+.bookBox > div {
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    margin-left: auto;
+}
+
+.bookBox > div:hover {
+    transform: translateY(-10px);
+}
+
+.bookBox img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.bookBox h5, .bookBox h4, .bookBox p {
+    margin: 10px 0;
+}
+
+.bookBox button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.bookBox button:hover {
+    background-color: #555;
+}
+
+/* Adjust the heading styles */
+h3 {
+    text-align: center;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
