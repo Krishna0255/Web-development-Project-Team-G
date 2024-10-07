@@ -1,19 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EBook Website</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="style/eBook.css">
-    <link rel="stylesheet" href="style/chatbotInterface.css">
+    <link rel="stylesheet" href="eBook.css"/>
+    <script src="eBook.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="chatbotinterface.css">
 </head>
-
 <body>
-
     <div class="header">
         <p><span>Avail Discount On Our Selected Courses:</span> Get Our Mentor - Led Courses for Flat 50% Off!</p>
         <a href="">Explore</a>
@@ -26,21 +22,21 @@
             <li>Explore Courses</li>
             <li>Carrer</li>
             <li class="resources">Resourses</li>
-            <button>Login</button>
+            <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+
         </ul>
     </div>
-    <div class="container">
+    <div class="container" id="cont">
         <div class="box">
             <h2><span>THE TOP 10 HIGH-DEMAND JOBS</span><br>WITH ATTRACTIVE SALARIES</h2>
             <h5>The Ultimate Guide</h5>
-            <p>In this comprehensive eBook,we look at the top carrer choices for the future as well as the skills and
-                qualifications that employers are looking for in this rapidly changing job market.</p>
-            <h6>Learn About:</h6>
+            <p>In this comprehensive eBook, we look at the top carrer choices for the future as well as the skills and qualifications that employers are looking for in this rapidly changing job market.</p>
+            <h6>Learn About :</h6>
             <ul>
-                <li>Future Scope & Carrer Outlook</li>
-                <li>Salary Per Annum in India and USA</li>
-                <li>Qualifications, Skills, and Abilities</li>
-                <li>Courses Structure and Roadmaps-Yhills</li>
+                <li><i class="fa-solid fa-circle-arrow-right"></i> Future Scope & Carrer Outlook</li><br>
+                <li><i class="fa-solid fa-circle-arrow-right"></i> Salary Per Annum in India and USA</li><br>
+                <li><i class="fa-solid fa-circle-arrow-right"></i> Qualifications, Skills, and Abilities</li><br>
+                <li><i class="fa-solid fa-circle-arrow-right"></i> Courses Structure and Roadmaps-Yhills</li>
             </ul>
         </div>
         <div class="picture">
@@ -48,15 +44,22 @@
         </div>
     </div>
 
+    <form>
     <div class="form">
-        <label for="">Full Name</label><br>
+        <label for="">Full Name <span>*</span> </label><br>
         <input type="text" placeholder="Your Full Name" required><br>
-        <label for="">Mobile Number</label><br>
+        <label for="">Mobile Number <span>*</span></label><br>
         <input type="text" placeholder="Mobile Number" required><br>
-        <label for="">Email</label><br>
+        <label for="">Email <span>*</span></label><br>
         <input type="text" placeholder="Email Address" required><br>
-        <button>Download e-Book</button><br>
+        <button>Download e-Book</button><br>       
     </div>
+    </form>
+
+    <!-- <div class="chatbot">
+        <button class="chatter">CHATBOT</button>
+        <img src="https://img.freepik.com/free-vector/floating-robot_78370-3669.jpg?size=626&ext=jpg" alt="chatbot" class="chat">
+    </div> -->
 
     <div id="chatbot-modal" style="display:none;">
         <button class="chatbot-close" id="close-chatbot">×</button>
@@ -69,269 +72,270 @@
         <img src="assets/floating-robot_78370-3669.png" alt="Chatbot Icon">
     </button>
 
-    <div class="container1"></div>
-    <h5>Our Past and Present College Partners</h5>
+    <div class="container1">
+        <h5>Our Past and Present College Partners</h5>
     </div>
-
-    <h3>Recent eBooks</h3>
-    <div class="container2">
-        <div class="bookBox">
-            <div class="box1">
-                <img src="https://www.timedoctor.com/blog/images/2021/03/contact-center-analytics-1536x864.jpg.webp"
-                    alt="image">
-                <h5>JANUARY 24, 2024 6:00PM</h5>
-                <h4>Website Development</h4>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati, at magnam. Ut, excepturi nulla
-                    optio
-                    a molestias fugiat facere odio totam eligendi,<span id="dots1">......</span> <span
-                        id="more1">distinctio
-                        voluptatum laudantium sunt laboriosam ipsa! Atque aliquam voluptas nostrum repellat minima. Nisi
-                        rerum quaerat dolores, enim, consectetur magnam aut, dolore vel optio neque harum quibusdam quod
-                        accusamus!</span></p>
-                <button onclick="read1()" id="mybtn1">Read More</button>
-            </div>
-            <div class="box2">
-                <img src="https://www.timedoctor.com/blog/images/2021/03/contact-center-analytics-1536x864.jpg.webp"
-                    alt="image">
-                <h5>JANUARY 24, 2024 6:00PM</h5>
-                <h4>Complete WordPress</h4>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati, at magnam. Ut, excepturi nulla
-                    optio
-                    a molestias fugiat facere odio totam eligendi,<span id="dots2">......</span> <span
-                        id="more2">distinctio
-                        voluptatum laudantium sunt laboriosam ipsa! Atque aliquam voluptas nostrum repellat minima. Nisi
-                        rerum quaerat dolores, enim, consectetur magnam aut, dolore vel optio neque harum quibusdam quod
-                        accusamus!</span></p>
-                <button onclick="read2()" id="mybtn2">Read More</button>
-            </div>
-            <div class="box3">
-                <img src="https://www.timedoctor.com/blog/images/2021/03/contact-center-analytics-1536x864.jpg.webp"
-                    alt="image">
-                <h5>JANUARY 24, 2024 6:00PM</h5>
-                <h4>Website Development</h4>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati, at magnam. Ut, excepturi nulla
-                    optio
-                    a molestias fugiat facere odio totam eligendi,<span id="dots3">......</span> <span
-                        id="more3">distinctio
-                        voluptatum laudantium sunt laboriosam ipsa! Atque aliquam voluptas nostrum repellat minima. Nisi
-                        rerum quaerat dolores, enim, consectetur magnam aut, dolore vel optio neque harum quibusdam quod
-                        accusamus!</span></p>
-                <button onclick="read3()" id="mybtn3">Read More</button>
-            </div>
-            <div class="box4">
-                <img src="https://www.timedoctor.com/blog/images/2021/03/contact-center-analytics-1536x864.jpg.webp"
-                    alt="image">
-                <h5>JANUARY 24, 2024 6:00PM</h5>
-                <h4>Complete WordPress</h4>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati, at magnam. Ut, excepturi nulla
-                    optio
-                    a molestias fugiat facere odio totam eligendi,<span id="dots4">......</span> <span
-                        id="more4">distinctio
-                        voluptatum laudantium sunt laboriosam ipsa! Atque aliquam voluptas nostrum repellat minima. Nisi
-                        rerum quaerat dolores, enim, consectetur magnam aut, dolore vel optio neque harum quibusdam quod
-                        accusamus!</span></p>
-                <button onclick="read4()" id="mybtn4">Read More</button>
-            </div>
-            <div class="box5">
-                <img src="https://www.timedoctor.com/blog/images/2021/03/contact-center-analytics-1536x864.jpg.webp"
-                    alt="image">
-                <h5>JANUARY 24, 2024 6:00PM</h5>
-                <h4>Website Development</h4>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati, at magnam. Ut, excepturi nulla
-                    optio
-                    a molestias fugiat facere odio totam eligendi,<span id="dots5">......</span> <span
-                        id="more5">distinctio
-                        voluptatum laudantium sunt laboriosam ipsa! Atque aliquam voluptas nostrum repellat minima. Nisi
-                        rerum quaerat dolores, enim, consectetur magnam aut, dolore vel optio neque harum quibusdam quod
-                        accusamus!</span></p>
-                <button onclick="read5()" id="mybtn">Read More</button>
-            </div>
-            <div class="box6">
-                <img src="https://www.timedoctor.com/blog/images/2021/03/contact-center-analytics-1536x864.jpg.webp"
-                    alt="image">
-                <h5>JANUARY 24, 2024 6:00PM</h5>
-                <h4>Complete WordPress</h4>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati, at magnam. Ut, excepturi nulla
-                    optio
-                    a molestias fugiat facere odio totam eligendi,<span id="dots6">......</span> <span
-                        id="more6">distinctio
-                        voluptatum laudantium sunt laboriosam ipsa! Atque aliquam voluptas nostrum repellat minima. Nisi
-                        rerum quaerat dolores, enim, consectetur magnam aut, dolore vel optio neque harum quibusdam quod
-                        accusamus!</span></p>
-                <button onclick="read6()" id="mybtn">Read More</button>
-            </div>
-            <div class="box7">
-                <img src="https://www.timedoctor.com/blog/images/2021/03/contact-center-analytics-1536x864.jpg.webp"
-                    alt="image">
-                <h5>JANUARY 24, 2024 6:00PM</h5>
-                <h4>Website Development</h4>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati, at magnam. Ut, excepturi nulla
-                    optio
-                    a molestias fugiat facere odio totam eligendi,<span id="dots7">......</span> <span
-                        id="more7">distinctio
-                        voluptatum laudantium sunt laboriosam ipsa! Atque aliquam voluptas nostrum repellat minima. Nisi
-                        rerum quaerat dolores, enim, consectetur magnam aut, dolore vel optio neque harum quibusdam quod
-                        accusamus!</span></p>
-                <button onclick="read7()" id="mybtn">Read More</button>
-            </div>
-            <div class="box8">
-                <img src="https://www.timedoctor.com/blog/images/2021/03/contact-center-analytics-1536x864.jpg.webp"
-                    alt="image">
-                <h5>JANUARY 24, 2024 6:00PM</h5>
-                <h4>Complete WordPress</h4>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati, at magnam. Ut, excepturi nulla
-                    optio
-                    a molestias fugiat facere odio totam eligendi,<span id="dots8">......</span> <span
-                        id="more8">distinctio
-                        voluptatum laudantium sunt laboriosam ipsa! Atque aliquam voluptas nostrum repellat minima. Nisi
-                        rerum quaerat dolores, enim, consectetur magnam aut, dolore vel optio neque harum quibusdam quod
-                        accusamus!</span></p>
-                <button onclick="read8()" id="mybtn">Read More</button>
-            </div>
+    
+    <div class="container2" id="cont2">
+        <h3>Recent eBooks</h3>
+        <div class="container3">
+            <!-- <div class="b1"> -->
+        <div class="box1">
+            <img src="https://www.timedoctor.com/blog/images/2021/03/contact-center-analytics-1536x864.jpg.webp" alt="image">
+            <h5>JANUARY 24, 2024 6:00PM</h5>
+            <h4>Website Development</h4>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati, at magnam. Ut, excepturi nulla optio a molestias fugiat facere odio totam eligendi,<span id="dots1">......</span> <span id="more1">distinctio voluptatum laudantium sunt laboriosam ipsa! Atque aliquam voluptas nostrum repellat minima. Nisi rerum quaerat dolores, enim, consectetur magnam aut, dolore vel optio neque harum quibusdam quod accusamus!</span></p>
+            <button onclick="read1()" id="mybtn1">Read More</button>
         </div>
+    <!-- </div> -->
+    <!-- <div class="b2"> -->
+        <div class="box2">
+            <img src="https://www.timedoctor.com/blog/images/2021/03/contact-center-analytics-1536x864.jpg.webp" alt="image">
+            <h5>JANUARY 24, 2024 6:00PM</h5>
+            <h4>Complete WordPress</h4>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati, at magnam. Ut, excepturi nulla optio a molestias fugiat facere odio totam eligendi,<span id="dots2">......</span> <span id="more2">distinctio voluptatum laudantium sunt laboriosam ipsa! Atque aliquam voluptas nostrum repellat minima. Nisi rerum quaerat dolores, enim, consectetur magnam aut, dolore vel optio neque harum quibusdam quod accusamus!</span></p>
+            <button onclick="read2()" id="mybtn2">Read More</button>
+        </div>
+    <!-- </div> -->
+    <!-- <div class="b3"> -->
+        <div class="box3">
+            <img src="https://www.timedoctor.com/blog/images/2021/03/contact-center-analytics-1536x864.jpg.webp" alt="image">
+            <h5>JANUARY 24, 2024 6:00PM</h5>
+            <h4>Website Development</h4>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati, at magnam. Ut, excepturi nulla optio a molestias fugiat facere odio totam eligendi,<span id="dots3">......</span> <span id="more3">distinctio voluptatum laudantium sunt laboriosam ipsa! Atque aliquam voluptas nostrum repellat minima. Nisi rerum quaerat dolores, enim, consectetur magnam aut, dolore vel optio neque harum quibusdam quod accusamus!</span></p>
+            <button onclick="read3()" id="mybtn3">Read More</button>
+        </div>
+    <!-- </div> -->
+    <!-- <div class="b4"> -->
+        <div class="box4">
+            <img src="https://www.timedoctor.com/blog/images/2021/03/contact-center-analytics-1536x864.jpg.webp" alt="image">
+            <h5>JANUARY 24, 2024 6:00PM</h5>
+            <h4>Complete WordPress</h4>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati, at magnam. Ut, excepturi nulla optio a molestias fugiat facere odio totam eligendi,<span id="dots4">......</span> <span id="more4">distinctio voluptatum laudantium sunt laboriosam ipsa! Atque aliquam voluptas nostrum repellat minima. Nisi rerum quaerat dolores, enim, consectetur magnam aut, dolore vel optio neque harum quibusdam quod accusamus!</span></p>
+            <button onclick="read4()" id="mybtn4">Read More</button>
+        </div>
+    <!-- </div> -->
+    </div>
+    <div class="container4">
+        <div class="box5">
+            <img src="https://www.timedoctor.com/blog/images/2021/03/contact-center-analytics-1536x864.jpg.webp" alt="image">
+            <h5>JANUARY 24, 2024 6:00PM</h5>
+            <h4>Website Development</h4>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati, at magnam. Ut, excepturi nulla optio a molestias fugiat facere odio totam eligendi,<span id="dots5">......</span> <span id="more5">distinctio voluptatum laudantium sunt laboriosam ipsa! Atque aliquam voluptas nostrum repellat minima. Nisi rerum quaerat dolores, enim, consectetur magnam aut, dolore vel optio neque harum quibusdam quod accusamus!</span></p>
+            <button onclick="read5()" id="mybtn5">Read More</button>
+        </div>
+        <div class="box6">
+            <img src="https://www.timedoctor.com/blog/images/2021/03/contact-center-analytics-1536x864.jpg.webp" alt="image">
+            <h5>JANUARY 24, 2024 6:00PM</h5>
+            <h4>Complete WordPress</h4>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati, at magnam. Ut, excepturi nulla optio a molestias fugiat facere odio totam eligendi,<span id="dots6">......</span> <span id="more6">distinctio voluptatum laudantium sunt laboriosam ipsa! Atque aliquam voluptas nostrum repellat minima. Nisi rerum quaerat dolores, enim, consectetur magnam aut, dolore vel optio neque harum quibusdam quod accusamus!</span></p>
+            <button onclick="read6()" id="mybtn6">Read More</button>
+        </div>
+        <div class="box7">
+            <img src="https://www.timedoctor.com/blog/images/2021/03/contact-center-analytics-1536x864.jpg.webp" alt="image">
+            <h5>JANUARY 24, 2024 6:00PM</h5>
+            <h4>Website Development</h4>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati, at magnam. Ut, excepturi nulla optio a molestias fugiat facere odio totam eligendi,<span id="dots7">......</span> <span id="more7">distinctio voluptatum laudantium sunt laboriosam ipsa! Atque aliquam voluptas nostrum repellat minima. Nisi rerum quaerat dolores, enim, consectetur magnam aut, dolore vel optio neque harum quibusdam quod accusamus!</span></p>
+            <button onclick="read7()" id="mybtn7">Read More</button>
+        </div>
+        <div class="box8">
+            <img src="https://www.timedoctor.com/blog/images/2021/03/contact-center-analytics-1536x864.jpg.webp" alt="image">
+            <h5>JANUARY 24, 2024 6:00PM</h5>
+            <h4>Complete WordPress</h4>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati, at magnam. Ut, excepturi nulla optio a molestias fugiat facere odio totam eligendi,<span id="dots8">......</span> <span id="more8">distinctio voluptatum laudantium sunt laboriosam ipsa! Atque aliquam voluptas nostrum repellat minima. Nisi rerum quaerat dolores, enim, consectetur magnam aut, dolore vel optio neque harum quibusdam quod accusamus!</span></p>
+            <button onclick="read8()" id="mybtn8">Read More</button>
+        </div>
+    </div>
     </div>
 
     <div class="footer">
         <div class="foot1">
+            <div class="f1">
             <h5>Quick Links<br>-----------------------</h5>
-            <ul>
-                <li><a href="">About Us</a></li>
-                <li><a href="">Insights</a></li>
-                <li><a href="">Machine Learning Guide</a></li>
-                <li><a href="">Data Science Guide</a></li>
-                <li><a href="">Privacy Policy</a></li>
-                <li><a href="">Refund Policy</a></li>
-                <li><a href="">Terms and Conditions</a></li>
+        <ul>
+            <li><a href="#cont">About Us</a></li><br>
+            <li><a href="">Insights</a></li><br>
+            <li><a href="">Machine Learning Guide</a></li><br>
+            <li><a href="">Data Science Guide</a></li><br>
+            <li><a href="">Privacy Policy</a></li><br>
+            <li><a href="">Refund Policy</a></li><br>
+            <li><a href="">Terms and Conditions</a></li>
 
-            </ul>
+        </ul>
+    </div>
         </div>
 
         <div class="foot2">
+            <div class="f2">
             <h5>Courses<br>-----------------------</h5>
-            <ul>
-                <li><a href="">Machine Learning</a></li>
-                <li><a href="">Web Development</a></li>
-                <li><a href="">Cyber Security</a></li>
-                <li><a href="">Data Science</a></li>
-                <li><a href="">AutoCAD</a></li>
-                <li><a href="">All Courses</a></li>
+        <ul>
+            <li><a href="#cont2">Machine Learning</a></li><br>
+            <li><a href="#cont2">Web Development</a></li><br>
+            <li><a href="#cont2">Cyber Security</a></li><br>
+            <li><a href="#cont2">Data Science</a></li><br>
+            <li><a href="#cont2">AutoCAD</a></li><br>
+            <li><a href="#cont2">All Courses</a></li>
 
-            </ul>
+        </ul>
         </div>
-
-        <div class="foot3">
-            <h5>Contact Information<br>------------------------------</h5>
-            <ul>
-                <li>Phone: +91 - 9431246850</li>
-                <li>Email: support@-Yhills.com</li>
-                <li>Address: B-88,B Block, Sector 2<br>Noida, Uttar Pradesh-201301
-                </li>
-
-            </ul>
-        </div>
-
     </div>
 
+        <div class="foot3">
+            <div class="f3">
+            <h5>Contact Information<br>------------------------------</h5>
+        <ul>
+            <li>Phone: +91 - 9431246850</li><br>
+            <li>Email: support@-Yhills.com</li><br>
+            <li>Address: B-88,B Block, Sector 2<br><br>Noida, Uttar Pradesh-201301
+            </li>  
 
-
-
-    <!-- React and Babel -->
-    <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
-    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
-    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
-
-    <!-- React Chatbot -->
-    <script type="text/babel">
-        const { useState, useEffect, useRef } = React;
-
-        const Chatbot = () => {
-            const [messages, setMessages] = useState([]);
-            const [input, setInput] = useState('');
-            const chatWindowRef = useRef(null);
-
+        </ul>
+        </div>
+    </div>
+        
+    </div>
+ 
+    <div class="login">
+    <div id="id01" class="modal">
   
-  const getBotReply = (userMessage) => {
-    userMessage = userMessage.toLowerCase();
-
-    let botResponse = "Sorry, I don't understand that.";
-    let link = '';
-
-    if (userMessage.includes('book')) {
-      botResponse = 'Here is a link to one of our eBooks:';
-      link = 'https://www.example.com/sample-book';
-    } else if (userMessage.includes('hello')) {
-      botResponse = 'Hello! How can I assist you today?';
-    } else if (userMessage.includes('hi')) {
-      botResponse = 'Hello! How can I assist you today?';
-    }else if (userMessage.includes('i want book links')){
-        botResponse = 'you can type book name.HINT:write book it will provide you link'
-    }else if (userMessage.includes('link')){
-        botResponse = 'you can type book name.HINT:write book it will provide you link'
-    }
-
-    return { botResponse, link };
-  };
-
-  const sendMessage = (e) => {
-    e.preventDefault();
-    if (input.trim() === '') return;
-
-    const userMessage = { sender: 'user', text: input };
-    setMessages((prevMessages) => [...prevMessages, userMessage]);
-
-    const { botResponse, link } = getBotReply(input);
-    const botMessage = { sender: 'bot', text: botResponse };
-    setMessages((prevMessages) => [...prevMessages, botMessage]);
-
+        <form class="modal-content animate" action="/action_page.php" method="post">
+          <div class="imgcontainer">
+            <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+            <h2>LOGIN PAGE</h2>
+            <img src="https://static.vecteezy.com/system/resources/thumbnails/007/407/996/small_2x/user-icon-person-icon-client-symbol-login-head-sign-icon-design-vector.jpg" alt="Avatar" class="avatar">
+          </div>
+      
+          <div class="cont">
+            <label for="uname"><b>Username</b></label>
+            <input type="text" placeholder="Enter Username" name="uname" required><br>
+      
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" required><br>
+              
+            <button type="submit">Login</button><br>
+            <label>
+              <input type="checkbox" checked="checked" name="remember"> Remember me
+            </label>
+          </div>
+      
+          <div class="cont" style="background-color:#f1f1f1">
+            <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+            <span class="psw">Forgot <a href="#">password?</a></span>
+          </div>
+        </form>
+      </div>
+    </div> 
     
-    if (link) {
-      const linkMessage = { sender: 'bot', text: `Check this out: ${link}` };
-      setMessages((prevMessages) => [...prevMessages, linkMessage]);
+    
+<script>
+    var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
     }
+}
+</script>  
 
-    setInput('');
-  };
+
+<!-- React and Babel -->
+<script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
+<script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
+<script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+
+<!-- React Chatbot -->
+<script type="text/babel">
+    const { useState, useEffect, useRef } = React;
+
+    const Chatbot = () => {
+        const [messages, setMessages] = useState([]);
+        const [input, setInput] = useState('');
+        const chatWindowRef = useRef(null);
 
 
-            useEffect(() => {
-                if (chatWindowRef.current) {
-                    chatWindowRef.current.scrollTop = chatWindowRef.current.scrollHeight;
-                }
-            }, [messages]);
+const getBotReply = (userMessage) => {
+userMessage = userMessage.toLowerCase();
 
-            return (
-                <div className="chat-container">
-                    <div className="chat-window" ref={chatWindowRef}>
-                        {messages.map((msg, index) => (
-                            <div key={index} className={`message ${msg.sender}`}>
-                                {msg.text}
-                            </div>
-                        ))}
-                    </div>
-                    <form className="input-container" onSubmit={sendMessage}>
-                        <input
-                            type="text"
-                            value={input}
-                            onChange={(e) => setInput(e.target.value)}
-                            placeholder="Type a message..."
-                        />
-                        <button type="submit">Send</button>
-                    </form>
+let botResponse = "Sorry, I don't understand that.";
+let link = '';
+
+if (userMessage.includes('book')) {
+  botResponse = 'Here is a link to one of our eBooks:';
+  link = 'https://www.example.com/sample-book';
+} else if (userMessage.includes('hello')) {
+  botResponse = 'Hello! How can I assist you today?';
+} else if (userMessage.includes('hi')) {
+  botResponse = 'Hello! How can I assist you today?';
+}else if (userMessage.includes('i want book links')){
+    botResponse = 'you can type book name.HINT:write book it will provide you link'
+}else if (userMessage.includes('link')){
+    botResponse = 'you can type book name.HINT:write book it will provide you link'
+}
+
+return { botResponse, link };
+};
+
+const sendMessage = (e) => {
+e.preventDefault();
+if (input.trim() === '') return;
+
+const userMessage = { sender: 'user', text: input };
+setMessages((prevMessages) => [...prevMessages, userMessage]);
+
+const { botResponse, link } = getBotReply(input);
+const botMessage = { sender: 'bot', text: botResponse };
+setMessages((prevMessages) => [...prevMessages, botMessage]);
+
+
+if (link) {
+  const linkMessage = { sender: 'bot', text: `Check this out: ${link}` };
+  setMessages((prevMessages) => [...prevMessages, linkMessage]);
+}
+
+setInput('');
+};
+
+
+        useEffect(() => {
+            if (chatWindowRef.current) {
+                chatWindowRef.current.scrollTop = chatWindowRef.current.scrollHeight;
+            }
+        }, [messages]);
+
+        return (
+            <div className="chat-container">
+                <div className="chat-window" ref={chatWindowRef}>
+                    {messages.map((msg, index) => (
+                        <div key={index} className={`message ${msg.sender}`}>
+                            {msg.text}
+                        </div>
+                    ))}
                 </div>
-            );
-        };
+                <form className="input-container" onSubmit={sendMessage}>
+                    <input
+                        type="text"
+                        value={input}
+                        onChange={(e) => setInput(e.target.value)}
+                        placeholder="Type a message..."
+                    />
+                    <button type="submit">Send</button>
+                </form>
+            </div>
+        );
+    };
 
-        ReactDOM.render(<Chatbot />, document.getElementById('chatbot-root'));
+    ReactDOM.render(<Chatbot />, document.getElementById('chatbot-root'));
 
-        // Event listeners for chatbot
-        document.getElementById('chatbot-btn').addEventListener('click', () => {
-            document.getElementById('chatbot-modal').style.display = 'block';
-        });
+    // Event listeners for chatbot
+    document.getElementById('chatbot-btn').addEventListener('click', () => {
+        document.getElementById('chatbot-modal').style.display = 'block';
+    });
 
-        document.getElementById('close-chatbot').addEventListener('click', () => {
-            document.getElementById('chatbot-modal').style.display = 'none';
-        });
-    </script>
+    document.getElementById('close-chatbot').addEventListener('click', () => {
+        document.getElementById('chatbot-modal').style.display = 'none';
+    });
+</script>
+
 </body>
-
 </html>
